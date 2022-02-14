@@ -1,0 +1,3 @@
+var subscribeblock = document.getElementById("subscribe-block")
+subscribeblock.innerHTML = ""
+subscribeblock.insertAdjacentHTML('beforeend', "<%= escape_javascript(render(partial: "subscriptions/subscription", community: @community ))%>")

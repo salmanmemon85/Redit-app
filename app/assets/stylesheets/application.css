@@ -1,0 +1,272 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ body{
+    background-color: #fff;
+    margin: 0 !important;
+    line-height: 1;
+ }
+ .main-body-area{
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .form-wrap{
+     width: 400px;
+     background-color: #cfd1d0;
+     border-radius: 15px;
+     border: 2px solid #cfd1d0;
+     padding: 20px 30px;
+ }
+ .form-heading{
+     font-size: 19px;
+     font-weight: 600;
+     color: #000;
+     text-align: center;
+     margin-bottom: 20px;
+ }
+ .field label, .field em{
+     font-size: 16px;
+     font-weight: 400;
+     color: #000;
+     width: 100%;
+     margin-bottom: 10px;
+ }
+ .field em{
+     padding-bottom: 10px;
+ }
+ .field input, .field #post_description,.field select,.field textarea{
+     width: 100%;
+     height:35px;
+     margin-top: 10px;
+     background-color: #fff;
+     font-size: 16px;
+     font-weight: 500;
+     border-radius: 10px;
+     padding-left: 10px;
+     color: #000;
+     outline: none;
+     border: 1px solid #d8eddd;
+ }
+ .field #post_description,.field textarea {
+     height: 80px;
+ }
+ 
+.comment-box input,
+.actions input{
+    font-size: 15px;
+    padding: 10px;
+    font-weight: 500;
+    color: #fff;
+    border: 1px solid transparent;
+    outline: none;
+    background-color: #291bf2;
+    border-radius: 10px;
+}
+.logo-img{
+    width: 200px;
+}
+.header{
+    padding: 0px 0;
+    box-shadow: 1px 1px 10px #888;
+    background-color: #fff;
+}
+.post-area{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px #888;
+    border-radius: 10px;
+    padding: 0px 20px 15px 20px;
+    margin: 20px 0;
+    position: relative;
+}
+.trix-content div{
+    text-align: center;
+}
+.img-area{
+    width: 100%;
+}
+.img-area img{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.post-area h2,.post-area h3{
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    text-align: center;
+}
+.post-area p,.comment-content p{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: #555557;
+}
+.post-area h3{
+    font-weight: 500;
+    color: #ababb0;
+}
+.btn-a{
+    color: #fff !important;
+    display: block;
+    padding: 10px 0;
+    font-size: 15px;
+    width: 140px;
+    margin-right: 10px;
+}
+.comment-box textarea{
+    width: 100%;
+    height: 70px;
+    outline: none;
+    border: 1px solid transparent;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px 0;
+    color: #000;
+}
+.comment-content p{
+    text-align: left;
+}
+.comment-box label{
+    margin-top: 20px;
+}
+.dropdown-menu{
+    padding: 10px 25px;
+}
+.dropdown-menu li{
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 400;
+    list-style: none;
+}
+.dropdown-menu li a:hover,.comunity-area-3:hover a{
+    background-color: transparent !important;
+}
+.dropdown-menu li a{
+    color: #555557;
+    text-decoration: none;
+}
+.header-btn{
+    display: flex;
+}
+.all-community .btn{
+    width: 100%;
+    background-color: transparent;
+    border-radius: 10px;
+    color: #000;
+}
+.all-community .dropdown-menu{
+    width: 100%;
+}
+.community-area-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.community-area{
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 30px 0;
+    position: relative;
+    box-shadow: 1px 1px 10px #888;
+}
+.community-area img{
+    height: 300px;
+    position: relative;
+    width: 100%;
+}
+.community-area h4{
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+.community-area p{
+    font-size: 13px;
+    margin: 0;
+    font-weight: 500;
+    color: #888;
+}
+.community-area h3{
+    font-size: 13px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555557;
+}
+.community-area h2{
+    font-size: 15px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    position: absolute;
+    top: 20px;
+    color: #555557;
+}
+.subscribe-btn{
+    background-color: #cd0000;
+    text-decoration: none;
+    padding: 10px 0;
+    height: 40px;
+    font-size: 18px;
+    width: 160px;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    font-weight: bold;
+    color: #fff !important;
+    display: block;
+    text-transform: uppercase;
+}
+.comunity-area-3{
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    display: none;
+    top: 40px;
+    opacity: 1;
+    right: 30px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px #888;
+}
+.comunity-area-3 a{
+    font-size: 17px;
+    margin-bottom: 15px;
+    text-align: left;
+    font-weight: 500;
+    color: #555557;
+    text-decoration: none;
+    display: block;
+}
+.community-area .fas{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.3rem;
+    color: #555557; 
+}
+.comunity-area-3.active{
+    display: block;
+}
+.img-area-2{
+    width: 100%;
+    height: auto;
+}
+.img-area-2 img{
+    border-radius: 10px 0 0 10px;
+}

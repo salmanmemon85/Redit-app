@@ -1,0 +1,49 @@
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-10">
+<%= form_with(model: post) do |form| %>
+<h1 class="form-heading">New Post</h1>
+  <% if post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+        <% post.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+  <div class="field">
+    <%= form.label :community %>
+    <%= collection_select(:post, :community_id, Community.all, :id, :name) %>
+    
+  </div>
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.rich_text_area :description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :post_image %>
+    <%= form.file_field :post_image %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+
+</div>
+</div>
+</div>

@@ -1,0 +1,36 @@
+<h1>All Community</h1>
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-12">
+<% @communities.each do |community| %>
+
+<div class="community-area text-center">
+<div class="row align-items-center">
+<div class="col-lg-4">
+<div class="img-area-2">
+<%= image_tag community.community_image.thumb.url if community.community_image.present? %>
+</div>
+</div>
+<div class="col-lg-8">
+<div class="">
+<h2><%= community.user.name %></h2>
+<h4><%= community.name%></h4>
+<h3><%= community.title%></h3>
+<p><%= community.description%></p>
+</div>
+</div>
+</div>
+<div class="open-icon">
+<i class="fas fa-ellipsis-v"></i>
+</div>
+<div class="comunity-area-3">
+<%= link_to  "Back", communities_path(@community) %>
+<%= link_to  "Edit", edit_community_path(community) %>
+<%= link_to  "delete", @community, method: :delete, data: {confirm: "are you sure"} %>
+</div>
+</div>
+<% end %>
+
+</div>
+</div>
+</div>

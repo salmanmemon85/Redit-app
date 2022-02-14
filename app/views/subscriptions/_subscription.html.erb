@@ -1,0 +1,8 @@
+<% if user_signed_in? %>
+  <%  unless current_user.communities.include? @community %>
+    <%= link_to  "subscribe", community_subscriptions_path(@community), method: :post, remote: true, class: "subscribe-btn"%>
+    <% else %>
+    <%= link_to  "unsubscribe", community_subscriptions_path(@community), method: :delete, remote: true, class: "subscribe-btn" %>
+    
+  <% end %>
+<% end %>
